@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>校园动态</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="icon" href="./image/favicon.ico">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 头部导航 -->
+        <div class="headerBox">
+            <div class="header">
+                <div class="website_name">
+                    <img src="./image/01.png" alt="">
+                    <span>校园动态</span>
+                </div>
+                <div class="searchBox">
+                    <input type="text">
+                    <button class="searchBtn">搜索</button>
+                </div>
+                <ul class="head_nav">
+                    <li>
+                        <a href="#">首页</a> 
+                    </li>
+                    <li>
+                        <a href="#">热门</a> 
+                    </li>
+                    <li>
+                        <a href="#">新闻</a> 
+                    </li>
+                </ul>
+                <!-- 未登录状态 -->
+                <div class="user_opt">
+                    <a href="#" class="login">登录</a> 
+                    <span>|</span>
+                    <a href="#" class="register">注册</a> 
+                </div>
+                <!-- 登录状态 -->
+                <div class="user_info">
+                    <span></span>
+                    <a href="#" class="nav_userId" data-clickStatus="0">160520117</a>
+                    <ul class="nav_userClick">
+                        <li class="exitLogin">退出登录</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 主体 -->
+        <div class="mainBox">
+            <!-- 导航条 -->
+            <ul class="mainNav">
+                <li id="mainPageBtn" class="active">首页</li>
+                <li id="myPageBtn">个人主页</li>
+                <li id="dynamicPageBtn">校园动态</li>
+                <li id="newsPageBtn">校内新闻</li>
+            </ul>
+
+            <!-- 首页 -->
+            <div class="page active_page" id="mainPage">
+                <!--<div class="wheel"></div>-->
+                <div class="wallWrapper init">
+                    <ul class="content">
+                        <li class="item">
+                            <div class="inner">
+                                <div class="oImage"></div>
+                                <div class="title">
+                                    <h2>image</h2>
+                                </div>
+                                <div class="dir">
+                                    <div class="header">Image</div>
+                                    <div class="close"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="inner">
+                                <div class="oImage"></div>
+                                <div class="title">
+                                    <h2>image</h2>
+                                </div>
+                                <div class="dir">
+                                    <div class="header">Image</div>
+                                    <div class="close"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="inner">
+                                <div class="oImage"></div>
+                                <div class="title">
+                                    <h2>image</h2>
+                                </div>
+                                <div class="dir">
+                                    <div class="header">Image</div>
+                                    <div class="close"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="inner">
+                                <div class="oImage"></div>
+                                <div class="title">
+                                    <h2>image</h2>
+                                </div>
+                                <div class="dir">
+                                    <div class="header">Image</div>
+                                    <div class="close"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="inner">
+                                <div class="oImage"></div>
+                                <div class="title">
+                                    <h2>image</h2>
+                                </div>
+                                <div class="dir">
+                                    <div class="header">Image</div>
+                                    <div class="close"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="inner">
+                                <div class="oImage"></div>
+                                <div class="title">
+                                    <h2>image</h2>
+                                </div>
+                                <div class="dir">
+                                    <div class="header">Image</div>
+                                    <div class="close"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 个人主页 -->
+            <div class="page" id="myPage">
+                <div class="myPage_content">
+                    <div class="user_info_box">
+                        <img src="./image/07.jpg" class="user_image">
+                        <div>
+                            <p class="user_name">木木</p>
+                            <p class="user_sign">123</p>
+                        </div>
+                    </div>
+                    <!-- 个人主页导航 -->
+                    <ul class="user_nav">
+                        <li class="user_nav_concernBtn">
+                            <span >关注</span>
+                            <span>12</span>
+                        </li>
+                        <li class="user_nav_myDynamicBtn">
+                            <span>动态</span>
+                            <span>10</span> 
+                        </li>
+                        <li class="user_nav_myInfoBtn">个人信息</li>
+                    </ul>
+
+                    <div class="slideBox">
+                        <!-- 关注列表 -->
+                        <div class="concern">
+                            <div class="concern_slide concern_tpl">
+                                <img src="./image/07.jpg" class="fri_image">
+                                <div>
+                                    <p class="fri_name">阿光</p>
+                                    <p class="fri_sign">
+                                        <span>简介:</span>
+                                        <span class="fri_sign_info">12314165165114136156161465</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 动态列表 -->
+                        <div class="myDynamic">
+                            <div class="myDynamic_slide myDynamic_tpl">
+                                <!-- 头部 -->
+                                <div class="myDynamic_slide_head">
+                                    <img src="./image/07.jpg" >
+                                    <div>
+                                        <p class="myname">木木</p>
+                                        <p class="date">3.12</p>
+                                    </div>
+                                    <span class="more" flag="1">更多></span>
+                                    <ul class="more_list">
+                                        <li class="remove_myDynamic_slide">删除</li>
+                                        <li class="only">仅自己可见</li>
+                                        <li class="every">任何人可见</li>
+                                    </ul>
+                                </div>
+                                <!-- 内容区 -->
+                                <div class="myDynamic_slide_content">
+                                    <p class="content">hshshsh</p>
+                                </div>
+                                <!-- 底部 -->
+                                <div class="myDynamic_slide_bottom">
+                                    <div class="read_num">
+                                        <span>阅读</span>
+                                        <span>450</span> 
+                                    </div>
+                                    <div class="forward">转发</div>
+                                    <div class="comments" flag="1">评论</div>
+                                    <div class="like_num">
+                                        <span>赞</span>
+                                        <span>123</span> 
+                                    </div>
+                                </div>
+                                <!-- 评论区 -->
+                                <div class="myDynamic_slide_comment">
+                                    <img src="./image/07.jpg" alt="" class="comment_user_image">
+                                    <input type="text" class="comment_user_text">
+                                    <button class="comment_user_btn">评论</button>
+                                </div>
+                                <!-- 评论展示区 -->
+                                <div class="myDynamic_slide_comment_display">
+                                    <div class="usersComments">
+                                        <!-- 用户评论 -->
+                                        <div class="first_content">
+                                            <div class="">
+                                                <img src="./image/07.jpg" alt="" class="comment_user_image">
+                                                <span class="comment_user">木木</span>
+                                                <span>:</span>
+                                                <span class="commentContent">哈哈哈哈</span>
+                                                <button class="user_comment_userBtn" flag="1">回复</button>
+                                            </div>
+                                            <!-- 回复框 -->
+                                            <div class="user_comment_user">
+                                                <img src="./image/07.jpg" alt="" class="comment_user_image">
+                                                <input type="text" class="comment_user_text">
+                                                <button class="comment_user_btn">评论</button>
+                                            </div>
+                                        </div>
+                                        <!-- 用户回复用户 -->
+                                        <div class="add_content">
+                                            <div class="">
+                                                <img src="./image/07.jpg" alt="" class="comment_user_image">
+                                                <span class="comment_user">阿光</span>
+                                                <span>回复</span>
+                                                <span class="comment_user">木木</span>
+                                                <span>:</span>
+                                                <span class="commentContent">嘻嘻</span>
+                                                <button class="user_comment_userBtn" flag="1">回复</button>
+                                            </div>
+                                            <!-- 回复框 -->
+                                            <div class="user_comment_user">
+                                                <img src="./image/07.jpg" alt="" class="comment_user_image">
+                                                <input type="text" class="comment_user_text">
+                                                <button class="comment_user_btn">评论</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- 个人信息 -->
+                        <div class="myInfo">
+                            <form class="myInfo_list">
+                                <p>基本信息</p>
+                                <div class="text">
+                                    <label for="nickname">昵称</label>
+                                    <input name="nickname" type="text">
+                                </div>
+                                <div class="text">
+                                    <label for="introduction">简介</label>
+                                    <textarea name="introduction" wrap="hard"></textarea>
+                                </div>
+                                <div class="select">
+                                    <label for="">性别</label>
+                                    <div>
+                                        <label for="male">男</label><input id="male" name="sex" type="radio">
+                                        <label for="female">女</label><input id="female" name="sex" type="radio">
+                                    </div>
+                                    
+                                </div>
+                                <div class="text">
+                                    <label for="age">年龄</label>
+                                    <input name="age" type="text">
+                                </div>
+                                <div class="text">
+                                    <label for="college">学院</label>
+                                    <input name="college" type="text">
+                                </div>
+                                <div class="text">
+                                    <label for="grade">年级</label>
+                                    <input name="grade" type="text">
+                                </div>
+                                <div class="btn">
+                                    <input type="submit">
+                                    <input type="reset">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 校园动态 -->
+            <div class="page" id="dynamicPage">
+                <div class="dynamicPageBox">
+                    <div class="editBox">
+                        <p>发布趣事, 晒心情!</p>
+                        <textarea id="editInp" placeholder="发布趣事, 晒心情!"></textarea>
+                        <button class="pullDynamicBtn">发布</button>
+                    </div>
+                    <div class="dynamic_wrapper"></div>
+                </div>
+            </div>
+            
+            <!-- 校内新闻 -->
+            <div class="page" id="newsPage">
+                <div class="newPage_box">
+                    <p class="newPage_box_title">校内新闻</p>
+                    <div class="search_news_box">
+                        <div>
+                            <span>时间:</span>
+                            <span>
+                                <input id="year" type="text" name="year">
+                                <label for="year">年</label>
+                            </span>
+                            <span>
+                                <input id="month" type="text" name="month">
+                                <label for="month">月</label>
+                            </span>
+                            <button class="sureBtn">搜索</button>
+                        </div>
+                    </div>
+                    <p class="news_result">
+                        <span>搜索结果</span>
+                        <span class="news_num">32</span>
+                    </p>
+                    <ul class="news_box">
+                        <li class="news">
+                            <span class="news_sign"></span>
+                            <span class="news_title">人民日报连续刊登：微观察·习近平的这一周</span>
+                            <span class="news_date">2019年5月4日</span>
+                        </li>
+                        <li class="news">
+                            <span class="news_sign"></span>
+                            <span class="news_title">人民日报连续刊登：微观察·习近平的这一周</span>
+                            <span class="news_date">2019年5月4日</span>
+                        </li>
+                        <li class="news">
+                            <span class="news_sign"></span>
+                            <span class="news_title">人民日报连续刊登：微观察·习近平的这一周</span>
+                            <span class="news_date">2019年5月4日</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 登录界面 -->
+        <div class="dialog_log">
+            <div class="mask"></div>
+            <div class="loginBox">
+                <form action="" name="loginForm" id="loginForm">
+                    <p class="log_res_head">用户登录</p>
+                    <div class="loginForm_user_info">
+                        <input name="userId" type="text" placeholder="用户名/学号">
+                        <input name="password" type="text" placeholder="请输入密码">
+                    </div>
+                    <div class="saveInfo">
+                        <input name="autoLogin" type="checkbox">
+                        <span>下次自动登录</span>
+                    </div>
+                    <input class="log_res_btn logBtn" type="submit" value="登录">
+                </form>
+            </div>
+        </div>
+        <!-- 注册界面 -->
+        <div class="dialog_reg">
+            <div class="mask"></div>
+            <div class="registerBox">
+                <form action="" name="resgisterForm" id="resgisterForm">
+                    <p class="log_res_head">个人注册</p>
+                    <div class="resgisterForm_user_info">
+                        <input id="userIdInp" type="text" placeholder="请输入学号" name="userId">
+                        <input id="passwordInp" type="password" placeholder="设置密码(6-18位)" name="password">
+                        <input id="truePswdInp" type="password" placeholder="确认密码">
+                        <span class="isOK">可以注册</span>
+                        <span class="isNot">已存在该用户</span>
+                    </div>
+                    <input class="log_res_btn resBtn" type="submit" value="注册">
+                </form>
+            </div>
+        </div>
+        <!-- 动态加载好友主页 -->
+        <div class="dialog_friPage">
+            <div class="mask"></div>
+            <div class="friPageBox"></div>
+        </div>
+        <!-- 动态加载新闻信息 -->
+        <div class="dialog_news">
+            <div class="mask"></div>
+            <div class="news_info_box">
+                <div class="news_main">
+                    <div class="new_info_title">学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会</div>
+                    <div class="new_info_date_box">
+                        <span>发布时间:</span>
+                        <span class="new_info_date">2019年5月4日</span>
+                    </div>
+                    <div class="new_info_image"></div>
+                    <div class="new_info_content">学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会学校召开学习贯彻习近平总书记在纪念五四运动100周年大会上的重要讲话精神座谈会</div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/tool/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/tool/createWheel.js"></script>
+    <script type="text/javascript" src="./js/tool/renderFriData.js"></script>
+    <script type="text/javascript" src="./js/tool/renderDynamic.js"></script>
+    <script type="text/javascript" src="./js/tool/createPersonPage.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
+    <script type="text/javascript" src="./js/myPage.js"></script>
+    <script type="text/javascript" src="./js/newsPage.js"></script>
+    <script type="text/javascript" src="./js/new_Dynamic.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+/* 头部导航 */
+.headerBox{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(138, 192, 130);
+}
+
+.headerBox .header{
+    position: relative;
+    width: 1190px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.headerBox .header .website_name{
+    position: absolute;
+    height: 50px;
+}
+
+.headerBox .header .website_name img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.headerBox .header .website_name span{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.headerBox .header .searchBox{
+    position: absolute;
+    left: 150px;
+    top: 8px;
+    width: 500px;
+    height: 34px;
+}
+
+.headerBox .header .searchBox input{
+    float: left;
+    width: 400px;
+    height: 30px;
+}
+
+.headerBox .header .searchBox .searchBtn{
+    float: left;
+    width: 70px;
+    height: 33px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.headerBox .header .searchBox .searchBtn:hover{
+    background-color: #333;
+}
+
+.headerBox .header .head_nav{
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    right: 200px;
+    top: 10px;
+}
+
+.headerBox .header .head_nav li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.headerBox .header .head_nav li a{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.headerBox .header .head_nav li a:hover{
+    background-color: #fff;
+    color: rgb(138, 192, 130);
+    transition: all 1s;
+}
+
+
+/* 未登录状态 */
+.headerBox .header .user_opt{
+    /*display: none;*/
+    float: right;
+}
+
+.headerBox .header .user_opt a{
+    color: #000;
+    margin: 0 5px;
+}
+
+.headerBox .header .user_opt a:hover{
+    color: #fff;
+}
+
+/* 登录状态 */
+.headerBox .header .user_info{
+    display: none;
+    position: relative;
+    float: right;
+    width: 180px;
+}
+
+.headerBox .header .user_info span{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-image: url(./image/user.PNG);
+    background-size: 100% 100%;
+    margin-top: 10px; 
+}
+
+.headerBox .header .user_info a{
+    float: left;
+    width: 140px;
+    height: 50px;
+    color: #000;
+    transition: all 1s;
+}
+
+.headerBox .header .user_info a:hover{
+    color: #fff;
+    transition: all 1s;
+}
+
+.headerBox .header .user_info ul{
+    display: none;
+    position: absolute;
+    right: 65px;
+    top: 40px;
+    list-style: none;
+    border: 1px solid #aeaeae;
+}
+.headerBox .header .user_info ul li{
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+.headerBox .header .user_info ul li:hover{
+    background-color: #4d4d4d;
+    color: #fff;
+}
+
+
+.mainBox{
+    width: 100%;
+}
+
+.mainBox .page{
+    display: none;
+    position: absolute;
+    left: calc(50% - 595px);
+    top: 50px;
+    width: 1190px;
+    margin: 20px auto;
+}
+
+/* 导航 */
+.mainBox .mainNav{
+    position: fixed;
+    top: 30%;
+    left: 20px;
+    width: 150px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #000;
+    z-index: 1;
+}
+
+.mainBox .mainNav li{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 0;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.mainBox .mainNav li:hover{
+    background-color: rgb(138, 192, 130);
+    color: #fff;
+    transition: all .6s;
+}
+
+.mainBox .mainNav li.active{
+    background-color: rgb(138, 192, 130);
+    color: #fff;
+}
+
+
+/* 首页 */
+/*.mainBox #mainPage .wheel{*/
+    /*position: relative;*/
+    /*width: 800px;*/
+    /*height: 450px;*/
+    /*margin: 0px auto;*/
+/*}*/
+.mainBox .page#mainPage{
+    width: 1100px;
+    height: 600px;
+    margin: 20px 0px 20px 50px;
+    border: 1px solid #dbdbdb;
+}
+.mainBox #mainPage .wallWrapper {
+    width: 100%;
+    height: 100%;
+    /*background-color: #000;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainBox #mainPage .wallWrapper .content{
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainBox #mainPage .wallWrapper .content .item{
+    width: 16%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: width 0.5s linear, height 0.5s linear 0.5s;
+}
+.mainBox #mainPage .wallWrapper .content .item .inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s linear;
+}
+.mainBox #mainPage .wallWrapper .content .item .inner .oImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(./image/01.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+    transition: opacity 0.2s linear;
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(2) .inner .oImage{
+    background-image: url(./image/02.jpg);
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(3) .inner .oImage{
+    background-image: url(./image/03.jpg);
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(4) .inner .oImage{
+    background-image: url(./image/04.jpg);
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(5) .inner .oImage{
+    background-image: url(./image/05.jpg);
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(6) .inner .oImage{
+    background-image: url(./image/06.jpg);
+}
+
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(2) .inner{
+    transition-delay: 0.1s
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(3) .inner{
+    transition-delay: 0.2s
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(4) .inner{
+    transition-delay: 0.3s
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(5) .inner{
+    transition-delay: 0.4s
+}
+.mainBox #mainPage .wallWrapper .content .item:nth-of-type(6) .inner{
+    transition-delay: 0.5s
+}
+
+
+.mainBox #mainPage .wallWrapper .content .item h2{
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s linear;
+}
+.mainBox #mainPage .wallWrapper .content .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainBox #mainPage .wallWrapper .content .item:hover .title h2{
+    font-size: 25px;
+}
+.mainBox #mainPage .wallWrapper .content .item:hover .oImage{
+    opacity: 1;
+}
+
+.mainBox #mainPage .wallWrapper.init .content .item .inner{
+    transform: translateY(100%);
+}
+
+.mainBox #mainPage .wallWrapper .content .item.active{
+    width: 100%;
+    transition: width 0.5s linear 0.5s;
+}
+.mainBox #mainPage .wallWrapper.focus .content .item:not(.active){
+    width: 0%;
+    height: 0%;
+    transition: height 0.5s linear, width 0.5s linear 0.5s;
+}
+.mainBox #mainPage .wallWrapper .dir{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 24px;
+    opacity: 0;
+}
+.mainBox #mainPage .wallWrapper.focus .dir{
+    opacity: 0.7;
+    transition: opacity 0.5s linear 1s;
+}
+.mainBox #mainPage .wallWrapper .dir .header{
+    position: absolute;
+    left: 50px;
+}
+.mainBox #mainPage .wallWrapper.focus h2{
+    opacity: 0;
+}
+.mainBox #mainPage .wallWrapper .dir .close{
+    position: absolute;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+}
+.mainBox #mainPage .wallWrapper.focus .dir .close{
+    transform: rotate(360deg);
+    transition: transform 0.5s linear 1s;
+}
+.mainBox #mainPage .wallWrapper .dir .close::after,
+.mainBox #mainPage .wallWrapper .dir .close::before{
+    position: absolute;
+    top: calc(50% - 2px);
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+}
+.mainBox #mainPage .wallWrapper .dir .close::after{
+    transform: rotate(45deg);
+}
+.mainBox #mainPage .wallWrapper .dir .close::before{
+    transform: rotate(-45deg);
+}
+
+/* 个人主页 */
+.mainBox #myPage .myPage_content{
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    background-color: rgb(229, 248, 242);
+}
+
+.mainBox #myPage .myPage_content .user_info_box{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url(./image/06.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.mainBox #myPage .myPage_content .user_info_box .user_image{
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.mainBox #myPage .myPage_content .user_info_box > div{
+    position: absolute;
+    width: 200px;
+    bottom: 10px;
+    left: calc(50% - 100px);
+}
+
+.mainBox #myPage .myPage_content .user_info_box > div p{
+    margin: 10px 0;
+}
+
+.mainBox #myPage .myPage_content .user_info_box > div .user_name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user_nav{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.user_nav li{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: rgb(96, 151, 130);
+    margin: 15px 0;
+}
+
+.user_nav li:hover{
+    color: #fff;
+    background-color: rgb(96, 151, 130);
+}
+
+.concernUserBtn{
+    position: absolute;
+    left: 500px;
+    top: 88px;
+    background-color: #413f40;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 12px;
+    outline: none;
+}
+.concernUserBtn:hover{
+    background-color: #6a6869;
+}
+
+
+.slideBox{
+    position: relative;
+    right: -250px;
+    top: -180px;
+    width: 600px;
+}
+
+/* 关注列表 */
+.slideBox .concern{
+    display: none;
+    width: 100%;
+}
+
+.slideBox .concern .concern_slide{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 120px;
+    box-shadow: 0px 0px 5px 0px #000;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.slideBox .concern .concern_slide:hover{
+     background-color: rgb(235, 235, 235);
+}
+
+.slideBox .concern .concern_slide img{
+    margin: 30px 10px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.slideBox .concern .concern_slide > div{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid rgb(153, 153, 153);
+}
+
+.slideBox .concern .concern_slide > div .fri_name{
+    font-weight: 700;
+}
+
+.slideBox .concern .concern_slide > div .fri_sign{
+    font-size: 14px;
+}
+
+.slideBox .concern .concern_slide > div .fri_sign .fri_sign_info{
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+
+/* 个人动态列表 */
+.myDynamic{
+    display: none;
+}
+ .myDynamic_slide{
+    margin-bottom: 20px;
+    width: 600px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 0px #000;
+}
+
+ .myDynamic_slide .myDynamic_slide_head{
+    position: relative;
+    width: 600px;
+    height: 100px;
+}
+
+ .myDynamic_slide .myDynamic_slide_head img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+ .myDynamic_slide .myDynamic_slide_head > div{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+ .myDynamic_slide .myDynamic_slide_head > div .myname{
+    font-weight: 700;
+}
+
+ .myDynamic_slide .myDynamic_slide_head > div .date{
+    font-size: 12px;
+    color: #666;
+}
+
+ .myDynamic_slide .myDynamic_slide_head .more{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ .myDynamic_slide .myDynamic_slide_head .more_list{
+    display: none;
+    position: absolute;
+    right: 18px;
+    top: 45px;
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+ .myDynamic_slide .myDynamic_slide_head .more_list li:hover{
+    background-color: rgb(219, 219, 219);
+    color: rgb(75, 158, 107);
+}
+
+/* 内容区 */
+ .myDynamic_slide .myDynamic_slide_content{
+    width: 600px;
+    height: 200px;
+    background-color: rgb(240, 240, 240);
+}
+
+ .myDynamic_slide .myDynamic_slide_content > p{
+    width: 450px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+/* 底部 */
+ .myDynamic_slide .myDynamic_slide_bottom{
+    width: 600px;
+}
+
+ .myDynamic_slide .myDynamic_slide_bottom > div{
+    display: inline-block;
+    width: 145px;
+    height: 20px;
+    border-right: 1px solid rgb(211, 211, 211); 
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+ .myDynamic_slide .myDynamic_slide_bottom > div:hover{
+    color: rgb(80, 182, 148);
+}
+
+/* 评论区 */
+ .myDynamic_slide .myDynamic_slide_comment{
+    display: none;
+    width: 600px;
+    height: 60px;
+    /*border: 1px solid black;*/
+}
+
+.comment_user_image{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.comment_user_text{
+    width: 450px;
+    height: 20px;
+    border: 1px solid rgb(82, 143, 97);
+    box-shadow: 0px 0px 3px 0px #000;
+}
+
+.comment_user_btn{
+    width: 40px;
+    height: 25px;
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+/* 评论展示区 */
+.myDynamic_slide_comment_display{
+    width: 600px;
+    font-size: 14px;
+}
+.myDynamic_slide_comment_display .usersComments{
+    width: 580px;
+    margin: 5px auto;
+    border-bottom: 1px solid #9c9c9c;
+}
+.myDynamic_slide_comment_display .usersComments .commentBox{
+    position: relative;
+}
+.myDynamic_slide_comment_display .usersComments .commentBox .commentTime{
+    position: absolute;
+    left: 65px;
+    top: 5px;
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+}
+.myDynamic_slide_comment_display .usersComments .commentBox .commentContentBox{
+    position: absolute;;
+    left: 65px;
+    bottom: 10px;
+}
+.myDynamic_slide_comment_display .usersComments .comment_user{
+    color: rgb(55, 126, 110);
+}
+
+.myDynamic_slide_comment_display .usersComments .commentContent{
+    display: inline-block;
+    width: 400px;
+    word-wrap: break-word;
+    vertical-align: text-top;
+}
+
+.myDynamic_slide_comment_display .usersComments .add_content .commentContent{
+    display: inline-block;
+    width: 350px;
+    word-wrap: break-word;
+    vertical-align: text-top;
+}
+
+.myDynamic_slide_comment_display .usersComments .user_comment_userBtn{
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+    width: 50px;
+    height: 30px;
+    border: none;
+    color: rgb(53, 141, 112);
+    outline: none;
+    border-radius: 5px;
+}
+.myDynamic_slide_comment_display .usersComments .user_comment_userBtn:hover{
+    color: #fff;
+    background-color: rgb(53, 141, 112);
+}
+.myDynamic_slide_comment_display .usersComments .user_comment_user{
+    display: none;
+}
+
+
+/* 个人信息 */
+.myInfo{
+    display: none;
+    width: 600px;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #fff;
+}
+
+.myInfo .myInfo_list{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.myInfo .myInfo_list p{
+    font-weight: 700;
+    margin-top: 20px; 
+}
+
+.myInfo .myInfo_list > div{
+    margin: 20px 40px;
+}
+
+.myInfo .myInfo_list .text label{
+    color: #333;
+    font-size: 14px;
+}
+
+.myInfo .myInfo_list .text input{
+    width: 200px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.myInfo .myInfo_list .text textarea{
+    width: 200px;
+    height: 80px;
+    vertical-align: text-top;
+    margin-left: 10px;
+}
+
+.myInfo .myInfo_list .select > div{
+    display: inline-block;
+    margin: 10px;
+}
+
+.myInfo .myInfo_list .select > div label{
+    margin: 0 5px;
+}
+
+.myInfo .myInfo_list .btn input{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 0px #000;
+    border: 1px solid black;
+}
+
+
+/* 校园动态 */
+#dynamicPage{
+    /* border: 1px solid black; */
+}
+.dynamicPageBox{
+    width: 1000px;
+    box-shadow: 0px 0px 3px 0px #000;
+    margin: 10px auto;
+}
+#dynamicPage .dynamicPageBox .editBox{
+    position: relative;
+    width: 800px;
+    height: 190px;
+    border: 1px solid rgb(228, 228, 228);
+    margin: 0 auto;
+}
+#dynamicPage .dynamicPageBox .editBox p{
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 25px;
+    font-family: simsun;
+    color: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px rgb(117, 115, 115);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(125, 209, 170);
+}
+#dynamicPage .dynamicPageBox .editBox #editInp{
+    width: 750px;
+    height: 100px;
+    border: 1px solid rgb(110, 110, 110);
+    box-sizing: border-box;
+    margin: 10px 25px;
+    padding: 10px;
+    word-break: break-all;
+    font-family: "宋体";
+    resize: none;
+}
+#dynamicPage .dynamicPageBox .editBox .pullDynamicBtn{
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(138, 192, 130);
+    color: #fff;
+    transition: all 0.6s;
+}
+#dynamicPage .dynamicPageBox .editBox .pullDynamicBtn:hover{
+    color: rgb(138, 192, 130);
+    background-color: rgb(236, 236, 236);
+    transition: all 0.6s;
+}
+.dynamic_wrapper{
+    width: 600px;
+    margin: 20px auto;
+}
+
+
+/* 校内新闻 */
+#newsPage{
+    /* border: 1px solid black; */
+}
+#newsPage .newPage_box{
+    width: 1000px;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+}
+#newsPage .newPage_box .newPage_box_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px 0px 5px #fff;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(105, 175, 128);
+}
+#newsPage .newPage_box .search_news_box{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+#newsPage .newPage_box .search_news_box > div{
+    position: absolute;
+    top: 35px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+}
+#newsPage .newPage_box .search_news_box > div input{
+    width: 60px;
+}
+#newsPage .newPage_box .search_news_box > div .sureBtn{
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(109, 163, 114);
+    border: 1px solid rgb(77, 138, 95);
+    border-radius: 20px;
+    outline: none;
+}
+#newsPage .newPage_box .search_news_box > div .sureBtn:hover{
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+#newsPage .newPage_box .news_result{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+}
+#newsPage .newPage_box .news_result .news_num{
+    color: rgb(67, 136, 94);
+}
+#newsPage .newPage_box .news_box{
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(216, 216, 216);
+    box-shadow: 0px 0px 5px 0px #fff;
+}
+#newsPage .newPage_box .news_box .news{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    /* border: 1px solid black; */
+}
+#newsPage .newPage_box .news_box .news:hover{
+    background-color: rgb(224, 224, 224);
+}
+#newsPage .newPage_box .news_box .news .news_sign{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(66, 133, 92);
+    border-radius: 50%;
+}
+#newsPage .newPage_box .news_box .news .news_date{
+    float: right;
+    color: #666;
+    font-size: 14px;
+}
+
+/* 动态加载新闻详情 */
+.dialog_news{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.dialog_news .mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+.dialog_news .news_info_box{
+    position: absolute;
+    width: 1000px;
+    min-height: 550px;
+    top: 50px;
+    left: calc(50% - 500px); 
+    background-color: #fff;
+}
+.dialog_news .news_info_box .news_main{
+    width: 900px;
+    margin: 20px auto;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 0px 0px 5px 0px #fff;
+}
+.dialog_news .news_info_box .news_main .new_info_title{
+    width: 600px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px auto;
+}
+.dialog_news .news_info_box .news_main .new_info_date_box{
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+.dialog_news .news_info_box .news_main .new_info_image{
+    width: 700px;
+    height: 500px;
+    background-image: url(./image/08.JPG);
+    background-size: cover;
+    margin: 0px auto;
+}
+.dialog_news .news_info_box .news_main .new_info_content{
+    width: 600px;
+    text-indent: 2em;
+    margin: 20px auto;
+}
+
+
+
+/* 登录界面 */
+.dialog_log{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.dialog_log .mask{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.dialog_log .loginBox{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: calc(50% - 200px);
+    left: calc(50% - 250px);
+    background-color: #fff;
+    opacity: 0;
+}
+
+.log_res_head{
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 5px solid rgb(81, 161, 117);
+    margin: 30px 20px;
+}
+
+.dialog_log .loginBox form > .loginForm_user_info input{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 25px 0px 0px 150px; 
+}
+
+.dialog_log .loginBox form > .saveInfo{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.dialog_log .loginBox form > .saveInfo input{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.dialog_log .loginBox form > .saveInfo span{
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+.log_res_btn{
+    width: 200px;
+    height: 35px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(105, 185, 129);
+    margin-left: 150px;
+    margin-top: 10px;
+    border: none;
+}
+
+
+/* 注册界面 */
+.dialog_reg{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.dialog_reg .mask{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.dialog_reg .registerBox{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: calc(50% - 200px);
+    left: calc(50% - 250px);
+    background-color: #fff;
+    opacity: 0;
+}
+
+.dialog_reg .registerBox form .resgisterForm_user_info input{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.dialog_reg .registerBox form .resgisterForm_user_info{
+    position: relative;
+}
+.dialog_reg .registerBox form .resgisterForm_user_info span{
+    position: absolute;
+    top: 8px; 
+    font-weight: 700;
+}
+.isOK{
+    display: none;
+    font-size: 12px;
+    color: rgb(34, 143, 88);
+    right: 80px;
+}
+.isOK::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-top: 3px;
+    margin-right: 5px;
+    background-color: rgb(34, 143, 88);
+    border-radius: 50%;
+}
+.isNot{
+    display: none;
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+    right: 50px;
+}
+.isNot::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-top: 3px;
+    margin-right: 5px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+
+
+/* 动态加载好友主页 */
+.dialog_friPage{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.dialog_friPage .mask{
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.dialog_friPage .friPageBox{
+    position: absolute;
+    width: 1000px;
+    min-height: 550px;
+    
+    top: 50px;
+    left: calc(50% - 500px);
+    padding-top: 50px; 
+    background-color: #fff;
+    overflow: auto;
+}
